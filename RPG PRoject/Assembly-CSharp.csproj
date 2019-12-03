@@ -53,6 +53,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\PropertyDrawers\BCategoryAttribute.cs" />
+     <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\PropertyDrawers\BInteractiveAttribute.cs" />
+     <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\PropertyDrawers\BMessageAttribute.cs" />
+     <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\PropertyDrawers\BRangeOptionsAttribute.cs" />
+     <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\PropertyDrawers\BRangeSimpleAttribute.cs" />
      <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
      <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
      <Compile Include="Assets\Scripts\Control\AIController.cs" />
@@ -64,7 +69,13 @@
      <Compile Include="Assets\Scripts\Core\IAction.cs" />
      <Compile Include="Assets\Scripts\Movement\Mover.cs" />
      <None Include="Assets\Asset Packs\Animations\README - Usage Rights for these assets 1.txt" />
+     <None Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Shaders\StandardLit Prototype Terrain.shader" />
+     <None Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Shaders\Unlit Prototype Ground.shader" />
+     <None Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Shaders\Unlit Prototype Skybox.shader" />
+     <None Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Shaders\SimpleLit Prototype Terrain.shader" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
+     <None Include="Assets\Asset Packs\BOXOPHOBIC\Utils\CGIncludes\VS_indirect.cginc" />
+     <None Include="Assets\Asset Packs\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/RPGProject/RPG PRoject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
