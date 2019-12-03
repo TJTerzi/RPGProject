@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 103
+  controlID: 109
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 101
+  controlID: 58
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 102
+  controlID: 108
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 3460
+  m_LastSelectedObjectID: -16748
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -335,14 +335,14 @@ MonoBehaviour:
     - {fileID: 1107088949540722000, guid: c2e4927fe423bf941986432523e30249, type: 2}
     - {fileID: 1102117829270280884, guid: c2e4927fe423bf941986432523e30249, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.34586293
+    - e00: 0.3714943
       e01: 0
       e02: 0
-      e03: -32.475983
+      e03: 101.579254
       e10: 0
-      e11: 0.34586293
+      e11: 0.3714943
       e12: 0
-      e13: 145.49886
+      e13: 165.40948
       e20: 0
       e21: 0
       e22: 1
@@ -475,20 +475,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Combat
+    - Assets/Scripts/Core
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Scripts/Combat
+  - Assets/Scripts/Core
   m_LastFoldersGridSize: 57
   m_LastProjectPath: D:\RPGProject\RPG PRoject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 130}
-    m_SelectedIDs: ea090000
-    m_LastClickedID: 2538
-    m_ExpandedIDs: 00000000bc090000580a0000c80a00009e0b0000ac0b0000cc0b00001e0d000000ca9a3b
+    scrollPos: {x: 0, y: 210}
+    m_SelectedIDs: 380b0000
+    m_LastClickedID: 2872
+    m_ExpandedIDs: 00000000c2090000700a0000ee0a0000f80a0000fa0b0000080c0000280c0000b40d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -516,7 +516,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000bc090000580a0000c80a00009e0b0000ac0b0000cc0b00001e0d0000
+    m_ExpandedIDs: 00000000c2090000700a0000f80a0000fa0b0000080c0000280c0000b40d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -570,7 +570,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 57
-  m_DirectoriesAreaWidth: 115
+  m_DirectoriesAreaWidth: 273
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -602,7 +602,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
-    m_CachedPref: 127
+    m_CachedPref: 238
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
@@ -635,9 +635,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 840d0000
-      m_LastClickedID: 3460
-      m_ExpandedIDs: defbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 18ba0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -687,14 +687,14 @@ MonoBehaviour:
     height: 308
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: aff62243281c6d14caa2b47122806b32
-  m_SceneLighting: 1
+  m_SceneLighting: 0
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -8.636143, y: 13.232611, z: -9.364878}
+    m_Target: {x: 0.00000023841858, y: 1.9505243, z: 0}
     speed: 2
-    m_Value: {x: -8.636143, y: 13.232611, z: -9.364878}
+    m_Value: {x: 0.00000023841858, y: 1.9505243, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -704,7 +704,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 1
+    showSkybox: 0
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -726,9 +726,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.30894375, y: 0.3278273, z: -0.114384614, w: 0.8854373}
   m_Size:
-    m_Target: 9.970284
+    m_Target: 4.846228
     speed: 2
-    m_Value: 9.970284
+    m_Value: 4.846228
   m_Ortho:
     m_Target: 1
     speed: 2

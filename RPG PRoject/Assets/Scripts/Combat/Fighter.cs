@@ -13,8 +13,8 @@ namespace RPG.Combat
      [SerializeField] float timeBetweenAttacks = 1f;
      [SerializeField] float weaponDamage = 5f;
      
-     Health target;
-     float timeSinceLastAttack = 0;
+     Health1 target;
+     float timeSinceLastAttack = Mathf.Infinity;
     
      private void Update()
         {
@@ -71,14 +71,14 @@ namespace RPG.Combat
     public bool CanAttack(GameObject combatTarget)
     {
         if(combatTarget == null) {return false;}
-        Health targetToTest = combatTarget.GetComponent<Health>();
+        Health1 targetToTest = combatTarget.GetComponent<Health1>();
         return targetToTest != null && !targetToTest.IsDead();
     }
 
         public void Attack(GameObject combatTarget)
       {
           GetComponent<ActionScheduler>().StartAction(this);
-          target = combatTarget.GetComponent<Health>();
+          target = combatTarget.GetComponent<Health1>();
           print("Take that you short, squat peasant!");
       }
 
