@@ -58,6 +58,8 @@
      <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\PropertyDrawers\BMessageAttribute.cs" />
      <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\PropertyDrawers\BRangeOptionsAttribute.cs" />
      <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\PropertyDrawers\BRangeSimpleAttribute.cs" />
+     <Compile Include="Assets\Scripts\Cinematics\CinematicsControlRemover.cs" />
+     <Compile Include="Assets\Scripts\Cinematics\CinematicTrigger.cs" />
      <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
      <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
      <Compile Include="Assets\Scripts\Control\AIController.cs" />
@@ -76,6 +78,9 @@
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
      <None Include="Assets\Asset Packs\BOXOPHOBIC\Utils\CGIncludes\VS_indirect.cginc" />
      <None Include="Assets\Asset Packs\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
+ <Reference Include="Cinemachine">
+ <HintPath>D:/RPGProject/RPG PRoject/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/RPGProject/RPG PRoject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -85,17 +90,14 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>D:/RPGProject/RPG PRoject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>D:/RPGProject/RPG PRoject/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/RPGProject/RPG PRoject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>D:/RPGProject/RPG PRoject/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
- <Reference Include="Cinemachine">
- <HintPath>D:/RPGProject/RPG PRoject/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
- </Reference>
- <Reference Include="com.unity.cinemachine.editor">
- <HintPath>D:/RPGProject/RPG PRoject/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
