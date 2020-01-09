@@ -194,6 +194,11 @@ PrefabInstance:
       propertyPath: healthPoints
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 6330907369106510572, guid: 8ba5fcf359b933c4d814f2eba31869b4,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: 8a6864d2-b549-4675-9bb9-d9b4b501c5a8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ba5fcf359b933c4d814f2eba31869b4, type: 3}
 --- !u!4 &12146878 stripped
@@ -309,7 +314,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224800608}
-  m_LocalRotation: {x: 0.0089022005, y: 0.9904416, z: -0.07751939, w: 0.11374071}
+  m_LocalRotation: {x: 0.008902201, y: 0.9904416, z: -0.07751937, w: 0.11374075}
   m_LocalPosition: {x: 28, y: 5.6, z: 39.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -799,6 +804,11 @@ PrefabInstance:
         type: 3}
       propertyPath: healthPoints
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330907369106510572, guid: 8ba5fcf359b933c4d814f2eba31869b4,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: 256d4697-1465-48b4-8cac-ecd15f3bf615
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ba5fcf359b933c4d814f2eba31869b4, type: 3}
@@ -1548,7 +1558,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880627407}
-  m_LocalRotation: {x: -0.004466981, y: 0.9955038, z: -0.07062081, w: -0.06296865}
+  m_LocalRotation: {x: -0.0044669774, y: 0.9955038, z: -0.07062079, w: -0.06296861}
   m_LocalPosition: {x: 1.9, y: 3.92, z: 32.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1782,6 +1792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: healthPoints
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330907369106510572, guid: 8ba5fcf359b933c4d814f2eba31869b4,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: 7ca7d6b4-0ef3-4ee5-82b2-0bc12e496e06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ba5fcf359b933c4d814f2eba31869b4, type: 3}
@@ -2649,6 +2664,11 @@ PrefabInstance:
         type: 3}
       propertyPath: healthPoints
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330907369106510572, guid: 8ba5fcf359b933c4d814f2eba31869b4,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: f062127c-2615-401f-b553-de98a96aee69
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ba5fcf359b933c4d814f2eba31869b4, type: 3}
