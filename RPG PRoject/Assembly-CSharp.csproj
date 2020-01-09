@@ -70,6 +70,7 @@
      <Compile Include="Assets\Scripts\Core\Health1.cs" />
      <Compile Include="Assets\Scripts\Core\IAction.cs" />
      <Compile Include="Assets\Scripts\Movement\Mover.cs" />
+     <Compile Include="Assets\Scripts\Scene Management\Portal.cs" />
      <None Include="Assets\Asset Packs\Animations\README - Usage Rights for these assets 1.txt" />
      <None Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Shaders\StandardLit Prototype Terrain.shader" />
      <None Include="Assets\Asset Packs\BOXOPHOBIC\Utils\Shaders\Unlit Prototype Ground.shader" />
