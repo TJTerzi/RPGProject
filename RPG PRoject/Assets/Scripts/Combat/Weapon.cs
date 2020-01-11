@@ -17,7 +17,7 @@ namespace RPG.Combat
            {
                 Instantiate(equippedPrefab, handTransform);
            }
-           if(animator != null)
+           if(animatorOverride != null)
            {
                 animator.runtimeAnimatorController = animatorOverride;
            }
