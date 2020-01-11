@@ -79,6 +79,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1039394087577457113, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: player
+      objectReference: {fileID: 0}
     - target: {fileID: 136486364754611520, guid: a856c94c6af4d004d94324da9ca9db79,
         type: 3}
       propertyPath: m_Radius
@@ -98,17 +103,41 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3f6fc0cf5e5d31c458bc74ede87cb8ae, type: 2}
-    - target: {fileID: 1039394087577457113, guid: a856c94c6af4d004d94324da9ca9db79,
+    - target: {fileID: 1213072469410403580, guid: a856c94c6af4d004d94324da9ca9db79,
         type: 3}
-      propertyPath: uniqueIdentifier
-      value: player
-      objectReference: {fileID: 0}
+      propertyPath: weaponPrefab
+      value: 
+      objectReference: {fileID: 2154265629872427072, guid: 587f323ee77367d42abda0dbccc5abfd,
+        type: 3}
+    - target: {fileID: 1213072469410403580, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 5116114883020622376}
+    - target: {fileID: 1213072469410403580, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: weaponOverride
+      value: 
+      objectReference: {fileID: 22100000, guid: 4cc4014f9bc069b4ca60bb14e96ae2b7,
+        type: 2}
+    - target: {fileID: 1213072469410403580, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 5504819defb8d864888ffe9cf143f875,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 114179022046319864, guid: a856c94c6af4d004d94324da9ca9db79, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a856c94c6af4d004d94324da9ca9db79, type: 3}
 --- !u!1 &7898904847637941350 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 925727476641747864, guid: a856c94c6af4d004d94324da9ca9db79,
+    type: 3}
+  m_PrefabInstance: {fileID: 7009382400457105406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5116114883020622376 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2757965793270846934, guid: a856c94c6af4d004d94324da9ca9db79,
     type: 3}
   m_PrefabInstance: {fileID: 7009382400457105406}
   m_PrefabAsset: {fileID: 0}
