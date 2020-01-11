@@ -126,12 +126,34 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 5504819defb8d864888ffe9cf143f875,
         type: 2}
+    - target: {fileID: 1213072469410403580, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 78a79a7334b92624ba9ea8a37b848295,
+        type: 2}
+    - target: {fileID: 1213072469410403580, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 5116114883020622376}
+    - target: {fileID: 1213072469410403580, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 5116114883020696128}
     m_RemovedComponents:
     - {fileID: 114179022046319864, guid: a856c94c6af4d004d94324da9ca9db79, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a856c94c6af4d004d94324da9ca9db79, type: 3}
 --- !u!1 &7898904847637941350 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 925727476641747864, guid: a856c94c6af4d004d94324da9ca9db79,
+    type: 3}
+  m_PrefabInstance: {fileID: 7009382400457105406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5116114883020696128 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2757965793270920638, guid: a856c94c6af4d004d94324da9ca9db79,
     type: 3}
   m_PrefabInstance: {fileID: 7009382400457105406}
   m_PrefabAsset: {fileID: 0}
