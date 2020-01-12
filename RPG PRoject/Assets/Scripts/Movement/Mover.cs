@@ -22,9 +22,6 @@ namespace RPG.Movement
             health = GetComponent<Health1>();
         }
         
-        private void Start() 
-        {
-        }
 
         void Update()
         {

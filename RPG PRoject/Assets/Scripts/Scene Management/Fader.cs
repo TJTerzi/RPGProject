@@ -11,7 +11,6 @@ using UnityEngine;
         {
             canvasGroup = GetComponent<CanvasGroup>();
 
-            
         }
 
         public void FadeOutImmediate()

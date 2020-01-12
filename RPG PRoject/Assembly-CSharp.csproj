@@ -58,6 +58,7 @@
      <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\PropertyDrawers\BMessageAttribute.cs" />
      <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\PropertyDrawers\BRangeOptionsAttribute.cs" />
      <Compile Include="Assets\Asset Packs\BOXOPHOBIC\Utils\PropertyDrawers\BRangeSimpleAttribute.cs" />
+     <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Utils\LazyValue.cs" />
      <Compile Include="Assets\Scripts\Cinematics\CinematicsControlRemover.cs" />
      <Compile Include="Assets\Scripts\Cinematics\CinematicTrigger.cs" />
      <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
