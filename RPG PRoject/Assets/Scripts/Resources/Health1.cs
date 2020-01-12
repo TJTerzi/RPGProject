@@ -1,14 +1,25 @@
 ﻿using UnityEngine;
 using RPG.Saving;
+using RPG.Stats;
+using RPG.Core;
+using System;
 
-namespace RPG.Core
+namespace RPG.Resources
 {
     public class Health1 : MonoBehaviour, ISaveable
     {
-        [SerializeField] float healthPoints = 100f;
+        float healthPoints = -1f;
 
 
         bool isDead = false;
+
+        private void Start() 
+        {
+            if(healthPoints < 0)
+            {
+                healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health1);
+            }
+        }
 
 
 
@@ -18,14 +29,24 @@ namespace RPG.Core
         }
 
 
-        public void TakeDamage(float damage)
+        public void TakeDamage(GameObject instigator, float damage)
         {
             healthPoints = Mathf.Max(healthPoints - damage, 0);
             if (healthPoints == 0)
             {
                 Die();
+                AwardExperience(instigator);
             }
         }
+
+
+        public float GetPercentage()
+        {
+            return 100 * (healthPoints / GetComponent<BaseStats>().GetStat(Stat.Health1));
+
+        }
+
+
 
         private void Die()
         {
@@ -36,6 +57,15 @@ namespace RPG.Core
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
         }
+
+        private void AwardExperience(GameObject instigator)
+        {
+           Experience experience = instigator.GetComponent<Experience>();
+           if(experience == null) return;
+
+           experience.GainExperience(GetComponent<BaseStats>().GetStat(Stat.ExperienceReward));
+        }
+
 
         public object CaptureState()
         {

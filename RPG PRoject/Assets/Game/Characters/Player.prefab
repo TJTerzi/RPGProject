@@ -12,6 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f29235efaf4ee4387c84574bdfe14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5468623690777019322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7898904847637941350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6740ae2870ebf478d289d487c13f4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experiencePoints: 0
 --- !u!1001 &7009382400457105406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19,6 +32,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114318349405689076, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: characterClass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114318349405689076, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: startingLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 925727476641747864, guid: a856c94c6af4d004d94324da9ca9db79,
         type: 3}
       propertyPath: m_Name
@@ -79,30 +102,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1039394087577457113, guid: a856c94c6af4d004d94324da9ca9db79,
-        type: 3}
-      propertyPath: uniqueIdentifier
-      value: player
-      objectReference: {fileID: 0}
-    - target: {fileID: 136486364754611520, guid: a856c94c6af4d004d94324da9ca9db79,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 136486364754611520, guid: a856c94c6af4d004d94324da9ca9db79,
-        type: 3}
-      propertyPath: m_Height
-      value: 1.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 2077899512, guid: a856c94c6af4d004d94324da9ca9db79, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2757965793265220556, guid: a856c94c6af4d004d94324da9ca9db79,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3f6fc0cf5e5d31c458bc74ede87cb8ae, type: 2}
     - target: {fileID: 1213072469410403580, guid: a856c94c6af4d004d94324da9ca9db79,
         type: 3}
       propertyPath: weaponPrefab
@@ -142,6 +141,30 @@ PrefabInstance:
       propertyPath: leftHandTransform
       value: 
       objectReference: {fileID: 5116114883020696128}
+    - target: {fileID: 1039394087577457113, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077899512, guid: a856c94c6af4d004d94324da9ca9db79, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 136486364754611520, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 136486364754611520, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 2757965793265220556, guid: a856c94c6af4d004d94324da9ca9db79,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3f6fc0cf5e5d31c458bc74ede87cb8ae, type: 2}
     m_RemovedComponents:
     - {fileID: 114179022046319864, guid: a856c94c6af4d004d94324da9ca9db79, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a856c94c6af4d004d94324da9ca9db79, type: 3}

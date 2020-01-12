@@ -30,6 +30,10 @@ void Update()
     {
         Save();
     }
+    if(Input.GetKeyDown(KeyCode.D))
+    {
+        Delete();
+    }
 }
 
         public void Save()
@@ -42,6 +46,11 @@ void Update()
             
             GetComponent<SavingSystem>().Load(defaultSaveFile);
         }
+
+        public void Delete()
+            {
+                GetComponent<SavingSystem>().Delete(defaultSaveFile);
+            }
+        }
     }
 
-}
