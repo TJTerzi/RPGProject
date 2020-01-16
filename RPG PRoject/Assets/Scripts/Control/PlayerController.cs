@@ -4,6 +4,7 @@ using RPG.Combat;
 using UnityEngine;
 using RPG.Resources;
 using UnityEngine.EventSystems;
+using UnityEngine.AI;
 
 namespace RPG.Control
 {
@@ -11,13 +12,7 @@ public class PlayerController : MonoBehaviour
     {
         Health1 health;
         
-    enum CursorType
-    {
-        None,
-        Movement,
-        Combat,
-        UI
-    }
+
     [System.Serializable]
     struct CursorMapping
         {
@@ -27,6 +22,7 @@ public class PlayerController : MonoBehaviour
         }
     
     [SerializeField] CursorMapping[] cursorMappings = null;
+    [SerializeField] float maxNavMeshProjectionDistance = 1f;
 
     private void Awake() 
     {
@@ -44,14 +40,15 @@ public class PlayerController : MonoBehaviour
             }
 
 
-            
-            if (InteractWithCombat()) {return;}
+            if(InteractWithComponent()) return;
             if (InteractWithMovement()) {return;}
 
             SetCursor(CursorType.None);
 
 
         }
+
+
 
         private bool InteractWithUI()
         {
@@ -63,47 +60,67 @@ public class PlayerController : MonoBehaviour
             return false;
         }
 
-        private bool InteractWithCombat()
+        private bool InteractWithComponent()
         {
-            RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
+            RaycastHit[] hits = RaycastAllSorted();
             foreach (RaycastHit hit in hits)
             {
-                CombatTarget target = hit.transform.GetComponent<CombatTarget>();
-                if(target == null) {continue;}
-
-                GameObject targetGameObject = target.gameObject;
-                if(!GetComponent<Fighter>().CanAttack(target.gameObject))
-                {
-                    continue;
-                }
-
-                if (Input.GetMouseButton(0))
-                {
-                    GetComponent<Fighter>().Attack(target.gameObject);
-                }
-                SetCursor(CursorType.Combat);
-                return true;
+              IRaycastable[] raycastables =  hit.transform.GetComponents<IRaycastable>();
+              foreach (IRaycastable raycastable in raycastables)
+              {
+                  if(raycastable.HandleRaycast(this))
+                  {
+                        SetCursor(raycastable.GetCursorType());
+                        return true;
+                  }
+              }
             }
             return false;
         }
 
+        RaycastHit[] RaycastAllSorted()
+        {
+            RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
+            float[] distances = new float[hits.Length];
+            for (int i = 0; i < hits.Length; i++)
+                {
+                    distances[i] = hits[i].distance;
+                }
+            Array.Sort(distances, hits);
+            return hits;
+        }
 
         private bool InteractWithMovement()
         
         {
-            RaycastHit hit;
-            bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
+            //RaycastHit hit;
+            //bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
+            Vector3 target;
+            bool hasHit = RaycastNavMesh(out target);
             if (hasHit == true)
             {
                 if (Input.GetMouseButton(0))
                 {
-                    GetComponent<Mover>().StartMoveAction(hit.point, 1f);
+                    GetComponent<Mover>().StartMoveAction(target, 1f);
                 }
                 SetCursor(CursorType.Movement);
                 return true;
 
             }
             return false;
+        }
+
+        private bool RaycastNavMesh(out Vector3 target)
+        {
+            target = new Vector3();
+            RaycastHit hit;
+            bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
+            if(!hasHit) return false;
+            NavMeshHit navMeshHit;
+            bool hasCastToNavMesh = NavMesh.SamplePosition(hit.point, out navMeshHit, maxNavMeshProjectionDistance, NavMesh.AllAreas);
+            if(!hasCastToNavMesh) return false;
+            target = navMeshHit.position;
+            return true;
         }
 
         private void SetCursor(CursorType type)
